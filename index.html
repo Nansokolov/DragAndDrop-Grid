@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <input type="number" name="row" id="row" placeholder="строки" max="10" value="4"/>
+      <input type="number" name="col" id="col" placeholder="колонки" max="10"  value="4"/>
+      <input type="button" value="create table" onclick="createTable()" />
+    </form>
+    <div id="tablePlace"></div>
+    <div class="components">
+      <div id="draggable1"  pw="1" ph="1" class="draggable" draggable="true" style="width: 50px; height: 50px;">1x1</div>
+      <div id="draggable2"  pw="1" ph="2" class="draggable" draggable="true" style="width: 50px; height: 100px;">1x2</div>
+      <div id="draggable3"  pw="2" ph="2" class="draggable" draggable="true" style="width: 100px; height: 100px;">2x2</div>
+      <div id="draggable4"  pw="1" ph="3" class="draggable" draggable="true" style="width: 50px; height: 150px;">1x3</div>
+      <div id="draggable5"  pw="3" ph="1" class="draggable" draggable="true" style="width: 150px; height: 50px;">3x1</div>
+      <div id="draggable6"  pw="3" ph="2" class="draggable" draggable="true" style="width: 150px; height: 100px;">3x2</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
